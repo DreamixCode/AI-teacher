@@ -1,0 +1,516 @@
+# AI Development Learning Path for Java Engineers (with switch to python)
+## 6-Session Comprehensive Course
+
+### Course Overview
+**Target Audience**: Mid to Senior Java Spring Boot backend engineers with no significant prior AI experience
+**Duration**: 6 sessions (2-3 hours each)
+**Format**: Hands-on workshops with theory, practical exercises, homework, and self-assessment
+**Prerequisites**: Strong Java/Spring Boot experience, basic Python knowledge (optional Python transition included)
+
+---
+
+## Session 1: AI Fundamentals & Development Paradigms
+**Duration**: 2.5 hours
+
+### Learning Objectives
+- Understand the three levels of AI involvement in software development
+1. AI Dev tools user - how to use efficiently and securely the available AI coding tools
+2. AI simple app developer - using existing (external model) glue together a RAG
+3. Building a machine learning algorithm
+
+
+### Theory (45 minutes)
+1. **Three Levels of AI in Software Development**
+   - Level 1: Using AI as development tools (GitHub Copilot, ChatGPT for coding) - short overview and how to.
+   - Level 2: Building applications that use AI (OPENAI basic completition APIs, Spring AI, RAG system, vector daabase)
+   - Level 3: Implementing/modifying AI models, backward propagation, embeddings, fine-tuning...
+
+2. **AI Fundamentals**
+   - What is AI, ML, LLM, NLP, Generative AI
+   - Understanding tokens, context windows, temperature
+   - System messages vs user messages
+   - Prompt engineering basics
+   - Cost considerations and rate limiting
+
+3. **AI Model Landscape**
+   - OpenAI GPT models
+   - Anthropic Claude
+   - Google Gemini
+   - Local models (Ollama)
+   - When to use each
+
+### Hands-on Exercise (60 minutes)
+**Simple Chat Integration**
+- Set up Spring Boot project with AI client
+- Implement basic chat endpoint
+- Experiment with system messages vs user messages
+- Test different temperature settings
+- Test the priority when system message and user message are contradicting
+- input / output guard rails
+- Implement basic error handling and rate limiting
+
+### Homework (45 minutes)
+- Create a simple "AI Assistant" that can answer questions about your company
+- Implement proper logging and monitoring
+- Add input validation and sanitization
+- Document API responses and error codes
+
+### Self-Assessment Checklist
+- [ ] Can explain the difference between the three AI development levels
+- [ ] Understands system vs user messages
+- [ ] Can implement basic AI chat integration
+- [ ] Knows how to handle API errors and rate limits
+- [ ] Can explain token usage and cost implications
+
+### Session Assessment (Instructor Evaluation)
+**Technical Implementation**: ___/5
+- Code quality and error handling
+- API integration and configuration
+- Basic monitoring implementation
+
+**Concept Understanding**: ___/5
+- AI development paradigms comprehension
+- Model selection rationale
+- Cost and security awareness
+
+**Practical Application**: ___/5
+- Homework completion quality
+- Problem-solving approach
+- Documentation and code comments
+
+---
+
+## Session 2: Advanced Chat Applications & Prompt Engineering
+**Duration**: 2.5 hours
+
+### Learning Objectives
+- Master prompt engineering techniques
+- Build context-aware chat applications
+- Implement conversation memory
+- Handle streaming responses
+
+### Theory (45 minutes)
+1. **Advanced Prompt Engineering**
+   - Few-shot learning
+   - Chain-of-thought prompting
+   - Role-based prompting
+   - Context window management
+
+2. **Chat Application Patterns**
+   - Conversation state management
+   - Memory strategies (session-based, persistent)
+   - Streaming responses
+   - Multi-turn conversations
+
+3. **Security & Privacy**
+   - Data sanitization
+   - PII handling
+   - Prompt injection prevention
+   - Output validation
+
+### Hands-on Exercise (60 minutes)
+**Advanced Chat with Memory**
+- Build chat application with conversation history
+- Implement streaming responses
+- Add role-based system prompts
+- Create conversation export functionality
+- Implement basic security measures
+
+### Homework (45 minutes)
+- Create a "Code Review Assistant" that can analyze Java code
+- Implement conversation persistence (database)
+- Add user authentication and conversation isolation
+- Create conversation analytics (response time, token usage)
+
+### Self-Assessment Checklist
+- [ ] Can design effective prompts for specific use cases
+- [ ] Understands conversation memory management
+- [ ] Can implement streaming responses
+- [ ] Knows security best practices for AI applications
+- [ ] Can explain prompt injection and prevention
+
+### Session Assessment (Instructor Evaluation)
+**Technical Implementation**: ___/5
+- Prompt engineering implementation
+- Streaming response handling
+- Security measures implementation
+
+**Concept Understanding**: ___/5
+- Advanced prompt patterns comprehension
+- Memory management strategies
+- Security threat understanding
+
+**Practical Application**: ___/5
+- Code review assistant functionality
+- Conversation analytics implementation
+- Authentication and isolation features
+
+---
+
+## Session 3: RAG Fundamentals & Embeddings
+**Duration**: 3 hours
+
+### Learning Objectives
+- Understand RAG (Retrieval-Augmented Generation) concepts
+- Learn about embeddings and vector representations
+- Implement basic embedding generation
+- Understand vector similarity
+
+### Theory (60 minutes)
+1. **RAG Architecture**
+   - What is RAG and why use it?
+   - RAG vs fine-tuning
+   - RAG workflow: Index → Query → Retrieve → Generate
+
+2. **Embeddings Deep Dive**
+   - What are embeddings?
+   - Vector representations of text
+   - Similarity metrics (cosine, euclidean)
+   - Embedding models comparison
+
+3. **Vector Databases Overview**
+   - Pinecone, Weaviate, Chroma, Qdrant
+   - PostgreSQL with pgvector extension
+   - When to use each option
+   - Performance considerations
+
+### Hands-on Exercise (90 minutes)
+**Document Q&A System**
+- Set up PostgreSQL with pgvector extension
+- Implement embedding generation using OpenAI/Anthropic
+- Create document indexing pipeline
+- Build semantic search functionality
+- Implement RAG query pipeline
+
+### Homework (30 minutes)
+- Create a "Knowledge Base Assistant" for your team's documentation
+- Implement document chunking strategies
+- Add metadata filtering (date, author, category)
+- Create search analytics (popular queries, response quality)
+
+### Self-Assessment Checklist
+- [ ] Can explain RAG workflow and benefits
+- [ ] Understands embedding concepts and similarity
+- [ ] Can implement basic RAG pipeline
+- [ ] Knows vector database options and trade-offs
+- [ ] Can design document chunking strategies
+
+### Session Assessment (Instructor Evaluation)
+**Technical Implementation**: ___/5
+- RAG pipeline implementation
+- Vector database setup and configuration
+- Embedding generation and storage
+
+**Concept Understanding**: ___/5
+- RAG architecture comprehension
+- Embedding similarity concepts
+- Vector database selection rationale
+
+**Practical Application**: ___/5
+- Knowledge base assistant functionality
+- Document chunking implementation
+- Search analytics and metadata filtering
+
+### Optional Extension: Alternative Vector Stores
+**Pinecone Integration** (30 minutes)
+- Set up Pinecone account and API
+- Implement Pinecone client integration
+- Compare performance with PostgreSQL
+- Understand Pinecone's managed service benefits
+
+**Weaviate Integration** (30 minutes)
+- Set up Weaviate local instance
+- Implement Weaviate client integration
+- Explore Weaviate's schema flexibility
+- Compare with PostgreSQL and Pinecone
+
+---
+
+## Session 4: Advanced RAG & Vector Store Optimization
+**Duration**: 3 hours
+
+### Learning Objectives
+- Implement advanced RAG techniques
+- Optimize vector search performance
+- Handle complex document types
+- Implement hybrid search
+
+### Theory (45 minutes)
+1. **Advanced RAG Techniques**
+   - Multi-hop reasoning
+   - Re-ranking strategies
+   - Hybrid search (vector + keyword)
+   - Context window optimization
+
+2. **Performance Optimization**
+   - Embedding caching
+   - Vector index optimization
+   - Batch processing
+   - Query optimization
+
+3. **Production Considerations**
+   - Monitoring and observability
+   - Error handling and fallbacks
+   - A/B testing for RAG systems
+   - Cost optimization
+
+### Hands-on Exercise (90 minutes)
+**Advanced RAG System**
+- Implement hybrid search (vector + full-text)
+- Add re-ranking based on relevance scores
+- Create multi-document retrieval
+- Implement caching layer
+- Add performance monitoring
+
+### Homework (45 minutes)
+- Build a "Technical Support Bot" with company knowledge base
+- Implement conversation context with RAG
+- Add feedback collection for response quality
+- Create admin interface for knowledge base management
+
+### Self-Assessment Checklist
+- [ ] Can implement hybrid search strategies
+- [ ] Understands RAG performance optimization
+- [ ] Can design multi-hop reasoning flows
+- [ ] Knows production monitoring strategies
+- [ ] Can implement feedback loops for RAG quality
+
+### Session Assessment (Instructor Evaluation)
+**Technical Implementation**: ___/5
+- Hybrid search implementation
+- Performance optimization techniques
+- Monitoring and caching implementation
+
+**Concept Understanding**: ___/5
+- Advanced RAG techniques comprehension
+- Performance optimization strategies
+- Production considerations understanding
+
+**Practical Application**: ___/5
+- Technical support bot functionality
+- Feedback collection implementation
+- Admin interface for knowledge management
+
+---
+
+## Session 5: Python Transition & Agentic AI Fundamentals
+**Duration**: 3 hours
+
+### Learning Objectives
+- Understand Python basics for AI development
+- Learn agentic AI concepts
+- Implement simple multi-agent system
+- Understand agent communication patterns
+
+### Theory (60 minutes)
+1. **Python for AI Development**
+   - Python basics for Java developers
+   - Key AI libraries (LangChain, LlamaIndex)
+   - Environment setup and dependency management
+   - Python vs Java for AI development
+
+2. **Agentic AI Concepts**
+   - What are AI agents?
+   - Agent roles and responsibilities
+   - Agent communication patterns
+   - Multi-agent system architectures
+
+3. **Agent Frameworks**
+   - LangChain agents
+   - AutoGen
+   - CrewAI
+   - Custom agent implementations
+
+### Hands-on Exercise (90 minutes)
+**Multi-Agent Code Review System**
+- Set up Python environment with AI libraries
+- Create specialized agents (Code Reviewer, Security Expert, Performance Analyst)
+- Implement agent communication
+- Build agent orchestration layer
+- Create agent memory and state management
+
+### Homework (30 minutes)
+- Create a "Project Planning Agent Team"
+- Implement agent role specialization
+- Add agent decision logging
+- Create agent performance metrics
+
+### Self-Assessment Checklist
+- [ ] Can write basic Python code for AI applications
+- [ ] Understands agentic AI concepts
+- [ ] Can implement simple multi-agent system
+- [ ] Knows agent communication patterns
+- [ ] Can explain when to use agents vs traditional approaches
+
+### Session Assessment (Instructor Evaluation)
+**Technical Implementation**: ___/5
+- Python environment setup and basic coding
+- Multi-agent system implementation
+- Agent communication and orchestration
+
+**Concept Understanding**: ___/5
+- Agentic AI concepts comprehension
+- Agent role specialization understanding
+- Python vs Java for AI development rationale
+
+**Practical Application**: ___/5
+- Project planning agent team functionality
+- Agent decision logging implementation
+- Agent performance metrics creation
+
+---
+
+## Session 6: Advanced Agentic Flows & Production Deployment
+**Duration**: 3 hours
+
+### Learning Objectives
+- Build complex agentic workflows
+- Implement agent coordination strategies
+- Deploy AI applications to production
+- Monitor and maintain AI systems
+
+### Theory (45 minutes)
+1. **Advanced Agentic Patterns**
+   - Hierarchical agents
+   - Agent specialization and delegation
+   - Conflict resolution strategies
+   - Agent learning and adaptation
+
+2. **Production Deployment**
+   - Containerization strategies
+   - Environment management
+   - CI/CD for AI applications
+   - Infrastructure considerations
+
+3. **Monitoring & Maintenance**
+   - AI-specific monitoring (response quality, drift)
+   - Performance metrics
+   - Cost tracking and optimization
+   - Model versioning and updates
+
+### Hands-on Exercise (90 minutes)
+**Production-Ready Agentic System**
+- Build complex workflow with multiple specialized agents
+- Implement agent coordination and conflict resolution
+- Add comprehensive monitoring and logging
+- Create deployment pipeline
+- Implement health checks and alerting
+
+### Final Project (45 minutes)
+**Capstone: AI-Powered Development Assistant**
+- Integrate all learned concepts
+- Create a system that can:
+  - Analyze requirements
+  - Generate code suggestions
+  - Perform code reviews
+  - Create documentation
+  - Suggest testing strategies
+
+### Self-Assessment Checklist
+- [ ] Can design complex agentic workflows
+- [ ] Understands production deployment considerations
+- [ ] Can implement comprehensive monitoring
+- [ ] Knows how to handle agent conflicts
+- [ ] Can explain AI system maintenance strategies
+
+### Session Assessment (Instructor Evaluation)
+**Technical Implementation**: ___/5
+- Complex agentic workflow design
+- Production deployment implementation
+- Comprehensive monitoring setup
+
+**Concept Understanding**: ___/5
+- Advanced agentic patterns comprehension
+- Production deployment strategies
+- AI system maintenance understanding
+
+**Practical Application**: ___/5
+- Capstone project completion
+- Integration of all learned concepts
+- Production-ready system implementation
+
+---
+
+## Course Assessment & Evaluation
+
+### Self-Assessment Rubric
+**Beginner (1-2 points)**: Basic understanding, can follow tutorials
+**Intermediate (3-4 points)**: Can implement solutions, understand trade-offs
+**Advanced (5 points)**: Can design solutions, optimize performance, handle edge cases
+
+### Final Project Evaluation Criteria
+1. **Technical Implementation** (40%)
+   - Code quality and architecture
+   - Error handling and edge cases
+   - Performance optimization
+   - Security considerations
+
+2. **AI Integration** (30%)
+   - Appropriate AI model selection
+   - Effective prompt engineering
+   - RAG implementation quality
+   - Agent design and coordination
+
+3. **Production Readiness** (20%)
+   - Monitoring and observability
+   - Deployment strategy
+   - Documentation quality
+   - Testing coverage
+
+4. **Innovation & Creativity** (10%)
+   - Novel use cases
+   - Creative problem-solving
+   - User experience design
+
+### Instructor Assessment Tools
+1. **Session-by-Session Evaluation**: Use the assessment rubrics after each session
+2. **Pre/Post Course Survey**: Measure confidence and knowledge gaps
+3. **Code Review Sessions**: Evaluate implementation quality
+4. **Final Project Presentation**: Assess understanding and application
+5. **Peer Reviews**: Collaborative learning and feedback
+6. **Progress Tracking**: Monitor individual progress across sessions
+
+---
+
+## Resources & References
+
+### Essential Tools & Libraries
+- **Java**: Spring Boot, Spring AI, Jackson
+- **Python**: LangChain, LlamaIndex, FastAPI
+- **Vector Stores**: PostgreSQL (pgvector), Pinecone, Weaviate
+- **AI Models**: OpenAI GPT, Anthropic Claude, Google Gemini, Ollama
+- **Monitoring**: Prometheus, Grafana, LangSmith
+
+### Recommended Reading
+- "Designing Machine Learning Systems" by Chip Huyen
+- "Building LLM Applications for Production" by Shreya Shankar
+- "Prompt Engineering Guide" by Anthropic
+- "RAG Best Practices" by Pinecone
+
+### Practice Platforms
+- OpenAI Playground
+- Anthropic Console
+- LangSmith for tracing
+- Local Ollama for experimentation
+
+---
+
+## Course Success Metrics
+
+### Learning Outcomes
+- 90% of participants can implement basic AI chat applications
+- 80% can build RAG systems with vector stores
+- 70% can create multi-agent workflows
+- 100% understand AI development paradigms and trade-offs
+
+### Business Impact
+- Participants can immediately apply skills to current projects
+- Reduced time to implement AI features
+- Improved AI application quality and reliability
+- Increased team confidence in AI development
+
+### Long-term Success Indicators
+- Participants become AI champions within their teams
+- Successful AI project implementations
+- Knowledge sharing and mentoring
+- Continued learning and skill development 
