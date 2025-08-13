@@ -21,7 +21,7 @@
 
 ### Theory (45 minutes)
 1. **Three Levels of AI in Software Development**
-   - Level 1: Using AI as development tools (GitHub Copilot, ChatGPT for coding) - short overview and how to.
+   - Level 1: Using AI as development tools (GitHub Copilot, Cursor, Windsurf) - short overview and how to.
    - Level 2: Building applications that use AI (OPENAI basic completition APIs, Spring AI, RAG system, vector daabase)
    - Level 3: Implementing/modifying AI models, backward propagation, embeddings, fine-tuning...
 
