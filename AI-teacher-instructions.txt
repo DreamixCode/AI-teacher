@@ -13,4 +13,3 @@ Every new learning session should be done in a new chat session with the AI teac
 you as a teacher can remind the user to do so.
 
 Every time load this file to the current session context.
-
