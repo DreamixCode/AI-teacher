@@ -14,25 +14,19 @@
 
 ### Learning Objectives
 - Understand the three levels of AI involvement in software development
-1. AI Dev tools user - how me as a developer can use efficiently and securely the available AI coding tools for your daily tasks
-2. AI simple app developer - how me as a developer  can use existing (local or external model) for text generation, how to make a RAG application
-3. Building a machine learning algorithm - how me as an AI developer can build, train and fine-tune a model (backward propagation tokens, tensors, embeddings, etc)
+1. AI simple app developer - how me as a developer  can use existing (local or external model) for text generation, how to make a RAG application
+2. Building a machine learning algorithm - how me as an AI developer can build, train and fine-tune a model (backward propagation tokens, tensors, embeddings, etc)
 
 
 ### Theory (45 minutes)
-1. **Three Levels of AI in Software Development**
-   - Level 1: Using AI as development tools (GitHub Copilot, Cursor, Windsurf) - short overview and how to.
-   - Level 2: Building applications that use AI (OPENAI basic completition APIs, Spring AI, RAG system, vector daabase)
-   - Level 3: Implementing/modifying AI models, backward propagation, embeddings, fine-tuning...
-
-2. **AI Fundamentals**
+1. **AI Fundamentals**
    - What is AI, ML, LLM, NLP, Generative AI
    - Understanding tokens, context windows, temperature
    - System messages vs user messages
    - Prompt engineering basics
    - Cost considerations and rate limiting
 
-3. **AI Model Landscape**
+2. **AI Model Landscape**
    - OpenAI GPT models
    - Anthropic Claude
    - Local models (Ollama)
@@ -90,6 +84,7 @@
 - Build context-aware chat applications
 - Implement conversation memory
 - Handle streaming responses
+- Structured output
 
 ### Theory (45 minutes)
 1. **Advanced Prompt Engineering**
@@ -496,6 +491,3 @@
 - LangSmith for tracing
 - Local Ollama for experimentation
 
-### general rules for this course
-- Never do the job instead of the student during all the Hands-on Exercise. This is not a vibe coding session,
-you need to help the Student to learn by doing it himself.
