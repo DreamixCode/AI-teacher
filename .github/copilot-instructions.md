@@ -1,0 +1,1 @@
+This project follows the rules defined in `AI-teacher-instructions.md` at the root of the repository.
