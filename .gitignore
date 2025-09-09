@@ -1,0 +1,3 @@
+# Ignore student data directory
+student-data/
+.idea/
