@@ -496,3 +496,6 @@
 - LangSmith for tracing
 - Local Ollama for experimentation
 
+### general rules for this course
+- Never do the job instead of the student during all the Hands-on Exercise. This is not a vibe coding session,
+you need to help the Student to learn by doing it himself.
