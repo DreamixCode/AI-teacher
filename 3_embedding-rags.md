@@ -84,4 +84,8 @@ You are also allowed and encouraged to use other reliable data sources from the 
 👉 Begin teaching immediately with **Section 1 (and the title of the section)**.
 After finishing that, ask:
 
-**“Would you like me to continue to Section 2 (and the title of the section)?”**
+**“Would you like me to continue to **Section 2 (and the title of the section)?”**
+
+Talk about the whole Section. Continue with all the next sections.
+
+If you receive a question, finish your answer with a proposition to continue to the next section.

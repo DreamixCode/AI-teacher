@@ -3,22 +3,10 @@
 An interactive AI-powered learning experience.
 
 ## Quick Start
-1. Open in AI-powered IDE (Cursor/Windsurf recommended)
-2. Start chat with: "I want to learn AI, where should I start?"
-3. Recommended model to use is Claude 3.7 Sonnet
+1. Open in an AI-powered IDE (Cursor or Windsurf recommended).
+   - Start a chat with: **"I want to learn AI, where should I start?"**
+2. Or simply copy any of the prompts from the `.md` files into a thinking-capable, larger model (e.g. Claude 3.7 Sonnet) and learn directly.
 
-## Tips
-- Ask one clear question at a time
-- Complete hands-on exercises
-- Follow the 6-session curriculum progression
-- Be specific: "Help me implement a basic chat endpoint"
-
-## Curriculum
-1. AI Fundamentals
-2. Advanced Chat & Prompting
-3. RAG & Embeddings
-4. Advanced RAG Optimization
-5. Agentic AI Basics
-6. Production Deployment
-
-Learn at your own pace through interactive AI guidance.
+## Recommended
+- Best experience: Claude 3.7 Sonnet, GPT-5 Thinking, others.
+- Works in both IDE chat and standalone paste-and-learn mode

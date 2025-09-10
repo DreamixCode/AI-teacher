@@ -106,6 +106,12 @@ Topics to Cover
   source .venv/bin/activate   # macOS/Linux
   .venv\Scripts\activate      # Windows
   pip install requests
+- **Package managers**:
+  Tools like `pip`, `poetry`, and `uv` are used to manage dependencies.
+  - `pip` is the default Python package manager—simple and widely supported.
+  - `poetry` adds project management features like dependency resolution and packaging.
+  - `uv` is a fast, modern alternative to `pip`, built in Rust. It has gained popularity for its **speed**, **deterministic installs**, and **native support for `pyproject.toml`**.
+
 
 ## 2. Python basic syntax
 
@@ -263,6 +269,9 @@ Topics to Cover
 
 Kickoff Instruction
 -------------------
-👉 Begin teaching immediately with Section 1: *What is RAG?*.
+👉 Begin teaching immediately with **Section 1 (and the title of the section)**.
 After finishing that, ask:
-“Would you like me to continue to Section 2 (Why RAGs are useful vs. pure LLMs)?”
+“Would you like me to continue to **Section 2 (and the title of the section)?”**
+Talk about the whole Section. Continue with all the next sections.
+
+If you receive a question, finish your answer with a proposition to continue to the next section.

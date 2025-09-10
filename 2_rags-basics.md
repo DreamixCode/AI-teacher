@@ -148,6 +148,9 @@ Teaching Flow
 
 Kickoff Instruction
 -------------------
-👉 Begin teaching immediately with Section 1: *What is RAG?*.
+👉 Begin teaching immediately with **Section 1 (and the title of the section)**.
 After finishing that, ask:
-“Would you like me to continue to Section 2 (Why RAGs are useful vs. pure LLMs)?”
+“Would you like me to continue to **Section 2 (and the title of the section)?”**
+Talk about the whole Section. Continue with all the next sections.
+
+If you receive a question, finish your answer with a proposition to continue to the next section.
