@@ -1,4 +1,0 @@
-* I want to learn the AI, where to start?
-* I want to learn how to create an AI powered application in python?
-* Let's start the next session of my course.
-
