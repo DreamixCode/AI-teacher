@@ -5,7 +5,7 @@
 **Target Audience**: Mid to Senior Java Spring Boot backend engineers with no significant prior AI experience
 **Duration**: 6 sessions (2-3 hours each)
 **Format**: Hands-on workshops with theory, practical exercises, homework, and self-assessment
-**Prerequisites**: Strong Java/Spring Boot experience, basic Python knowledge (optional Python transition included)
+**Prerequisites**: Java/Spring Boot experience, basic Python knowledge (Python transition included)
 
 ---
 
@@ -14,34 +14,30 @@
 
 ### Learning Objectives
 - Understand the three levels of AI involvement in software development
-1. AI Dev tools user - how to use efficiently and securely the available AI coding tools
-2. AI simple app developer - using existing (external model) glue together a RAG
-3. Building a machine learning algorithm
+1. AI simple app developer - how me as a developer  can use existing (local or external model) for text generation, how to make a RAG application
+2. Building a machine learning algorithm - how me as an AI developer can build, train and fine-tune a model (backward propagation tokens, tensors, embeddings, etc)
 
 
 ### Theory (45 minutes)
-1. **Three Levels of AI in Software Development**
-   - Level 1: Using AI as development tools (GitHub Copilot, Cursor, Windsurf) - short overview and how to.
-   - Level 2: Building applications that use AI (OPENAI basic completition APIs, Spring AI, RAG system, vector daabase)
-   - Level 3: Implementing/modifying AI models, backward propagation, embeddings, fine-tuning...
-
-2. **AI Fundamentals**
+1. **AI Fundamentals**
    - What is AI, ML, LLM, NLP, Generative AI
    - Understanding tokens, context windows, temperature
    - System messages vs user messages
    - Prompt engineering basics
    - Cost considerations and rate limiting
 
-3. **AI Model Landscape**
+2. **AI Model Landscape**
    - OpenAI GPT models
    - Anthropic Claude
-   - Google Gemini
    - Local models (Ollama)
-   - When to use each
+   - When to use each and how
 
 ### Hands-on Exercise (60 minutes)
+**Example materials**
+- There are files in the current workspace: examples/Openai-agen-api-demo/* that can be used as an inspiration for the exercises
+
 **Simple Chat Integration**
-- Set up Spring Boot project with AI client
+- Set up Spring AI or Python project with AI client
 - Implement basic chat endpoint
 - Experiment with system messages vs user messages
 - Test different temperature settings
@@ -50,13 +46,13 @@
 - Implement basic error handling and rate limiting
 
 ### Homework (45 minutes)
-- Create a simple "AI Assistant" that can answer questions about your company
+- Create a simple "AI Assistant" that can answer questions about your company. You can use long context approach.
 - Implement proper logging and monitoring
 - Add input validation and sanitization
 - Document API responses and error codes
 
 ### Self-Assessment Checklist
-- [ ] Can explain the difference between the three AI development levels
+- [ ] Can explain what AI dev tools does? How the models can be used in an application? What is machine learning?
 - [ ] Understands system vs user messages
 - [ ] Can implement basic AI chat integration
 - [ ] Knows how to handle API errors and rate limits
@@ -88,6 +84,7 @@
 - Build context-aware chat applications
 - Implement conversation memory
 - Handle streaming responses
+- Structured output
 
 ### Theory (45 minutes)
 1. **Advanced Prompt Engineering**
@@ -177,7 +174,7 @@
 ### Hands-on Exercise (90 minutes)
 **Document Q&A System**
 - Set up PostgreSQL with pgvector extension
-- Implement embedding generation using OpenAI/Anthropic
+- Implement embedding generation using OpenAI or Anthropic
 - Create document indexing pipeline
 - Build semantic search functionality
 - Implement RAG query pipeline
@@ -185,8 +182,8 @@
 ### Homework (30 minutes)
 - Create a "Knowledge Base Assistant" for your team's documentation
 - Implement document chunking strategies
-- Add metadata filtering (date, author, category)
-- Create search analytics (popular queries, response quality)
+- Create semantic search feature.
+- Implement a chat that will use the RAG and the knowledge base for answering questions
 
 ### Self-Assessment Checklist
 - [ ] Can explain RAG workflow and benefits
@@ -486,6 +483,7 @@
 - "Building LLM Applications for Production" by Shreya Shankar
 - "Prompt Engineering Guide" by Anthropic
 - "RAG Best Practices" by Pinecone
+- "Spring AI" by Dan Vega (youtube series)
 
 ### Practice Platforms
 - OpenAI Playground
@@ -493,24 +491,3 @@
 - LangSmith for tracing
 - Local Ollama for experimentation
 
----
-
-## Course Success Metrics
-
-### Learning Outcomes
-- 90% of participants can implement basic AI chat applications
-- 80% can build RAG systems with vector stores
-- 70% can create multi-agent workflows
-- 100% understand AI development paradigms and trade-offs
-
-### Business Impact
-- Participants can immediately apply skills to current projects
-- Reduced time to implement AI features
-- Improved AI application quality and reliability
-- Increased team confidence in AI development
-
-### Long-term Success Indicators
-- Participants become AI champions within their teams
-- Successful AI project implementations
-- Knowledge sharing and mentoring
-- Continued learning and skill development 
