@@ -1,3 +1,4 @@
 # Ignore student data directory
 student-data/
 .idea/
+.DS_Store
